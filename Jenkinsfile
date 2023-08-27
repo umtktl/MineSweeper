@@ -14,7 +14,7 @@ pipeline {
 
     stage('Compile') {
       steps {
-        bat 'mvn -Dskips compile'
+        bat 'mvn -DskipTests compile'
       }
     }
 
